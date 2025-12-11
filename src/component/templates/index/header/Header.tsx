@@ -9,9 +9,59 @@ function Header() {
   return (
     <>
       <header className="w-full h-screen bg-[url(/images/herosection-mobile.png)] md:bg-[url(/images/herosection.jpg)] bg-center bg-cover">
-      <Navbar/>
-        <div className="flex items-center justify-between p-2 w-full h-full inset-0">
-          <div className="h-full w-[50%] flex items-start  pt-64 lg:pt-0 lg:items-center justify-center">
+        <Navbar />
+        <div className="flex flex-col items-start justify-center p-2 w-full h-full inset-0">
+          <div className="flex flex-col md:flex-row items-center justify-around md:gap-0 gap-64 md:justify-between w-full h-[70%]">
+            <div className="flex flex-col items-start justify-center gap-5">
+              <p className="text-white"> سلام، من </p>
+              <div className="flex items-center justify-center gap-1">
+                <h3 className="text-white font-black text-4xl md:text-6xl xl:text-8xl">
+                  {" "}
+                  علیرضا مرادی{" "}
+                </h3>
+                <h3 className="text-white font-black text-3xl xl:text-5xl"> ام </h3>
+              </div>
+            </div>
+            <div className="flex flex-col gap-7">
+              <h4 className="text-3xl  xl:text-5xl font-bold text-white">
+                {" "}
+                توسعه دهنده فرانت اند{" "}
+              </h4>
+              <p className="font-extralight text-white">
+                همیشه در مسیر خلق تجربه‌های سریع و قابل‌اعتماد.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col items-start w-full gap-10">
+            <h4 className="font-extralight text-white"> شبکه های مجازی من: </h4>
+            <div className="flex flex-wrap items-center justify-around w-full ">
+              <Link
+                href={"https://t.me/allirezza_mr"}
+                className="group w-14 h-14 lg:w-28 lg:h-28 rounded-lg bg-blue-600 flex items-center justify-center hover:bg-transparent transition-all"
+              >
+                <FaTelegram className="group-hover:text-blue-600 group-hover:scale-150 text-white text-2xl lg:text-4xl transition-all " />
+              </Link>
+              <Link
+                href={"https://t.me/allirezza_mr"}
+                className="group w-14 h-14 lg:w-28 lg:h-28 rounded-lg bg-white flex items-center justify-center hover:bg-transparent transition-all"
+              >
+                <FaLinkedin className="group-hover:text-blue-600 group-hover:scale-150 text-blue-600 text-2xl lg:text-4xl transition-all" />
+              </Link>
+              <Link
+                href={"https://t.me/allirezza_mr"}
+                className="group w-14 h-14 lg:w-28 lg:h-28 rounded-lg bg-black flex items-center justify-center hover:bg-transparent transition-all"
+              >
+                <FaGithub className="group-hover:text-white group-hover:scale-150 text-white text-2xl lg:text-4xl transition-all " />
+              </Link>
+              <Link
+                href={"https://t.me/allirezza_mr"}
+                className="group w-14 h-14 lg:w-28 lg:h-28 rounded-lg bg-red-600 flex items-center justify-center hover:bg-transparent transition-all"
+              >
+                <FaInstagramSquare className="group-hover:text-red-500 group-hover:scale-150 text-white text-2xl lg:text-4xl rounded-lg transition-all  " />
+              </Link>
+            </div>
+          </div>
+          {/* <div className="h-full w-[50%] flex items-start  pt-64 lg:pt-0 lg:items-center justify-center">
             <div className="flex flex-col gap-5">
               <div className=" flex items-end justify-center">
                 <div className="flex flex-col items-start justify-center gap-7">
@@ -56,7 +106,7 @@ function Header() {
                 <FaInstagramSquare className="group-hover:text-red-500 group-hover:scale-150 text-white text-2xl xl:text-4xl rounded-lg transition-all  " />
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </header>
     </>
