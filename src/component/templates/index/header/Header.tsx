@@ -35,7 +35,7 @@ function Header() {
                     pauseDuration={3000}
                     showCursor={true}
                     cursorCharacter="|"
-                    className={`${width > 1280 ? `text-[220px]` :`text-6xl`} font-black`}
+                    className={`${width > 1280 ? `text-[220px]` :`text-5xl`} font-black`}
                     textColors={["#f5f5f5"]}
                     variableSpeed={{ min: 20, max: 200 }}
                     loop={true}
@@ -52,7 +52,7 @@ function Header() {
             <div className="flex flex-col items-center md:items-start md:justify-start gap-7 w-full">
               <h4 className="text-3xl  xl:text-4xl text-white font-bold">
                 <FuzzyText
-                  fontSize="26px"
+                  fontSize="24px"
                   fontWeight={700}
                   color="#ffffff"
                   enableHover={true}
@@ -65,7 +65,7 @@ function Header() {
               <h5 className="text-white text-2xl font-extralight">
                 {" "}
                 <FuzzyText
-                  fontSize="26px"
+                  fontSize="24px"
                   fontWeight={100}
                   color="#ffffff"
                   enableHover={true}

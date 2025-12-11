@@ -46,7 +46,7 @@ function Navbar() {
             <button>
               <FaBars className="text-white"/>
             </button>
-            <h3 className="font-bold text-2xl sm:text-4xl font-sans text-gray-200">
+            <h3 className="font-bold text-xl sm:text-4xl font-sans text-gray-200">
               {" "}
               my portfolio{" "}
             </h3>

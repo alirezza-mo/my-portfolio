@@ -11,7 +11,7 @@ const vazir= Vazirmatn({
 });
 
 export const metadata : Metadata = {
-  title: "وبسایت گیم نت 4K",
+  title: "وبسایت شخصی مرادی",
 };
 
 export default function RootLayout({
