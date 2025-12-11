@@ -1,7 +1,7 @@
 "use client"
 import Navbar from "@/component/modules/Navber/Navbar";
-import FuzzyText from "@/components/ui/shadcn-io/fuzzy-text";
-import TypingText from "@/components/ui/shadcn-io/typing-text";
+import FuzzyText from "@/component/ui/shadcn-io/fuzzy-text";
+import TypingText from "@/component/ui/shadcn-io/typing-text";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaTelegram } from "react-icons/fa";
