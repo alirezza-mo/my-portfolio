@@ -1,6 +1,5 @@
 "use client"
 import Navbar from "@/component/modules/Navber/Navbar";
-import FuzzyText from "@/component/ui/shadcn-io/fuzzy-text";
 import TypingText from "@/component/ui/shadcn-io/typing-text";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -8,6 +7,7 @@ import { FaTelegram } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { CiCircleChevDown } from "react-icons/ci";
 
 function Header() {
   const [width , setWidth] = useState<number>(0)
@@ -24,7 +24,7 @@ function Header() {
       <header className="w-full h-screen bg-[url(/images/herosection-mobile.png)] md:bg-[url(/images/herosection.jpg)] bg-center bg-cover">
         <Navbar />
         <div className="flex flex-col items-start justify-around md:justify-center w-full h-full inset-0">
-          <div className="flex flex-col items-center justify-around md:justify-center w-full md:h-[70%]">
+          <div className="flex flex-col items-center justify-around md:justify-center w-full h-[50%] md:h-[70%]">
             <div className="flex flex-col items-start justify-center gap-5">
               {/* <p className="text-white"> سلام، من </p> */}
               <div className="flex items-center justify-center gap-1">
@@ -51,29 +51,14 @@ function Header() {
           <div className="flex md:flex-row flex-col justify-between items-center w-full gap-10 md:px-10">
             <div className="flex flex-col items-center md:items-start md:justify-start gap-7 w-full">
               <h4 className="text-3xl  xl:text-4xl text-white font-bold">
-                <FuzzyText
-                  fontSize="24px"
-                  fontWeight={700}
-                  color="#ffffff"
-                  enableHover={true}
-                  baseIntensity={0.18}
-                  hoverIntensity={0.5}
-                >
-                // Frontend Developer
-                </FuzzyText>
+               
+                 Frontend Developer //
               </h4>
               <h5 className="text-white text-2xl font-extralight">
                 {" "}
-                <FuzzyText
-                  fontSize="24px"
-                  fontWeight={100}
-                  color="#ffffff"
-                  enableHover={true}
-                  baseIntensity={0.18}
-                  hoverIntensity={0.5}
-                >
-                // TypeScript | Next.JS
-                </FuzzyText>
+               
+                 TypeScript | Next.JS //
+                
                 
               </h5>
               {/* <p className="font-extralight text-white">
@@ -106,6 +91,9 @@ function Header() {
                 <FaInstagramSquare className="group-hover:text-red-500 group-hover:scale-150 text-white text-2xl lg:text-4xl rounded-lg transition-all  " />
               </Link>
             </div>
+            <a className="text-white text-5xl transition-all animate-bounce block md:hidden">
+                <CiCircleChevDown />
+            </a>
           </div>
         </div>
 
