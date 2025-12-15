@@ -1,5 +1,6 @@
 import Footer from "@/component/modules/Footer/Footer";
-import AboutMe from "@/component/templates/index/header/AboutMe";
+import AboutMe from "@/component/templates/index/body/AboutMe";
+import Skills from "@/component/templates/index/body/Skills";
 import Header from "@/component/templates/index/header/Header";
 import React from "react";
 
@@ -12,6 +13,7 @@ export default function Home(): React.ReactElement {
         <div className="container">
           <AboutMe/>
         </div>
+        <Skills/>
         <Footer/>
       </main>
     </>
