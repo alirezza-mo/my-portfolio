@@ -21,7 +21,7 @@ function Header() {
   }, []);
   return (
     <>
-      <header className="w-full h-screen bg-[url(/images/herosection-mobile.png)] md:bg-[url(/images/herosection.jpg)] bg-center bg-cover">
+      <header className="w-full h-screen bg-[url(/images/hs-mb-purple.png)] md:bg-[url(/images/herosection.png)] bg-center bg-cover">
         <Navbar />
         <div className="flex flex-col items-start justify-around md:justify-center w-full h-full inset-0">
           <div className="flex flex-col items-center justify-around md:justify-center w-full h-[50%] md:h-[70%]">

@@ -43,8 +43,8 @@ function Navbar() {
 
   return (
     <>
-      <nav className="absolute w-full flex justify-center z-50">
-        <div className="fixed w-full mx-5 xl:w-[1240px] lg:w-[900px] md:w-[700px] bg-transparent md:flex items-center justify-between mt-5 backdrop-blur-xl p-2 rounded-2xl">
+      <nav className=" w-full flex justify-center z-50">
+        <div className="z-50 fixed w-full mx-5 xl:w-[1240px] lg:w-[900px] md:w-[700px] bg-transparent md:flex items-center justify-between mt-5 backdrop-blur-xl p-2 rounded-2xl">
           <ul className="hidden  md:flex items-center justify-center gap-4 text-gray-300 ">
             <li className="transition-all hover:text-gray-200 active:text-gray-200 cursor-pointer">
               {" "}
@@ -91,7 +91,7 @@ function Navbar() {
               my portfolio{" "}
             </h3>
           </div>
-          <div className="md:hidden flex text-4xl px-2 items-center justify-between">
+          <div className="md:hidden flex text-4xl px-2 items-center justify-between z-50">
             <motion.button onClick={showMenu} aria-label="Open Menu">
               <FaBars className="text-white" />
             </motion.button>

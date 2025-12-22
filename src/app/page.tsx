@@ -8,7 +8,7 @@ import React from "react";
 export default function Home(): React.ReactElement {
   return (
     <>
-      <main className="bg-gray-100 dark:bg-gray-950">
+      <main className="bg-bgLight dark:bg-bgDark">
         <Header/>
         <div className="container">
           <AboutMe/>

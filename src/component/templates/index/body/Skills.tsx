@@ -24,24 +24,24 @@ function Skills() {
 
   return (
     <>
-      <div className="w-full  bg-orange-500 text-white">
+      <div className="w-full bg-surfaceLight  dark:bg-surfaceDark text-white">
         <div className="container flex flex-col gap-10">
-          <div className="flex items-center justify-start gap-2 bg-gray-200/10 rounded-b-lg w-fit">
-            <span className="h-10 w-3 bg-white"></span>
-            <h3 className="font-bold text-2xl text-gray-300">
+          <div className="flex items-center justify-start gap-2 rounded-b-lg w-fit">
+            {/* <span className="h-10 w-3 bg-white"></span> */}
+            <h3 className="font-bold text-3xl text-headingTextLight dark:text-headingTextDark">
               {" "}
               مهارت های من :{" "}
             </h3>
           </div>
           <div className="w-full flex items-center justify-center gap-5 flex-wrap">
             <div
-              className="relative w-40 h-40 bg-white dark:bg-slate-800 rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
+              className="relative w-40 h-40 bg-bgLight dark:bg-bgDark rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
               onMouseEnter={() => setIsActiveReact(true)}
               onMouseLeave={() => setIsActiveReact(false)}
               onClick={() => setIsActiveReact(!isActiveReact)}
             >
               <div
-                className={`absolute inset-0 flex-col dark:text-gray-400 text-gray-600 font-sans text-xl font-semibold  flex items-center justify-center transition-all duration-500 ease-in-out
+                className={`absolute inset-0 flex-col dark:text-bodyTextDark text-bodyTextLight font-sans text-xl font-semibold  flex items-center justify-center transition-all duration-500 ease-in-out
           ${
             isActiveReact
               ? "opacity-0 invisible translate-y-10"
@@ -54,7 +54,7 @@ function Skills() {
               </div>
 
               <div
-                className={`absolute inset-0 flex flex-col items-center justify-center bg-white  dark:bg-slate-900/95 p-4 transition-all duration-500 ease-in-out
+                className={`absolute inset-0 flex flex-col items-center justify-center bg-bgLight  dark:bg-bgDark p-4 transition-all duration-500 ease-in-out
           ${
             isActiveReact
               ? "opacity-100 translate-y-0 visible"
@@ -81,8 +81,8 @@ function Skills() {
                 </span>
               </div>
             </div>
-            <div
-              className="relative w-40 h-40 bg-white dark:bg-slate-800 rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
+            <div  
+              className="relative w-40 h-40 bg-bgLight dark:bg-bgDark rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
               onMouseEnter={() => setIsActiveNext(true)}
               onMouseLeave={() => setIsActiveNext(false)}
               onClick={() => setIsActiveNext(!isActiveNext)}
@@ -101,7 +101,7 @@ function Skills() {
               </div>
 
               <div
-                className={`absolute inset-0 flex flex-col items-center justify-center bg-white  dark:bg-slate-900/95 p-4 transition-all duration-500 ease-in-out
+                className={`absolute inset-0 flex flex-col items-center justify-center bg-bgLight dark:bg-bgDark p-4 transition-all duration-500 ease-in-out
           ${
             isActiveNext
               ? "opacity-100 translate-y-0 visible"
@@ -129,7 +129,7 @@ function Skills() {
               </div>
             </div>
             <div
-              className="relative w-40 h-40 bg-white dark:bg-slate-800 rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
+              className="relative w-40 h-40 bg-bgLight dark:bg-bgDark rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
               onMouseEnter={() => setIsActiveJs(true)}
               onMouseLeave={() => setIsActiveJs(false)}
               onClick={() => setIsActiveJs(!isActiveJs)}
@@ -148,7 +148,7 @@ function Skills() {
               </div>
 
               <div
-                className={`absolute inset-0 flex flex-col items-center justify-center bg-white  dark:bg-slate-900/95 p-4 transition-all duration-500 ease-in-out
+                className={`absolute inset-0 flex flex-col items-center justify-center bg-bgLight dark:bg-bgDark p-4 transition-all duration-500 ease-in-out
           ${
             isActiveJs
               ? "opacity-100 translate-y-0 visible"
@@ -176,7 +176,7 @@ function Skills() {
               </div>
             </div>
             <div
-              className="relative w-40 h-40 bg-white dark:bg-slate-800 rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
+              className="relative w-40 h-40 bg-bgLight dark:bg-bgDark rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
               onMouseEnter={() => setIsActiveRedux(true)}
               onMouseLeave={() => setIsActiveRedux(false)}
               onClick={() => setIsActiveRedux(!isActiveRedux)}
@@ -195,7 +195,7 @@ function Skills() {
               </div>
 
               <div
-                className={`absolute inset-0 flex flex-col items-center justify-center bg-white  dark:bg-slate-900/95 p-4 transition-all duration-500 ease-in-out
+                className={`absolute inset-0 flex flex-col items-center justify-center bg-bgLight dark:bg-bgDark p-4 transition-all duration-500 ease-in-out
           ${
             isActiveRedux
               ? "opacity-100 translate-y-0 visible"
@@ -223,7 +223,7 @@ function Skills() {
               </div>
             </div>
             <div
-              className="relative w-40 h-40 bg-white dark:bg-slate-800 rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
+              className="relative w-40 h-40 bg-bgLight dark:bg-bgDark rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
               onMouseEnter={() => setIsActiveTs(true)}
               onMouseLeave={() => setIsActiveTs(false)}
               onClick={() => setIsActiveTs(!isActiveTs)}
@@ -242,7 +242,7 @@ function Skills() {
               </div>
 
               <div
-                className={`absolute inset-0 flex flex-col items-center justify-center bg-white  dark:bg-slate-900/95 p-4 transition-all duration-500 ease-in-out
+                className={`absolute inset-0 flex flex-col items-center justify-center bg-bgLight dark:bg-bgDark p-4 transition-all duration-500 ease-in-out
           ${
             isActiveTs
               ? "opacity-100 translate-y-0 visible"
@@ -270,7 +270,7 @@ function Skills() {
               </div>
             </div>
             <div
-              className="relative w-40 h-40 bg-white dark:bg-slate-800 rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
+              className="relative w-40 h-40 bg-bgLight dark:bg-bgDark rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
               onMouseEnter={() => setIsActiveTailwind(true)}
               onMouseLeave={() => setIsActiveTailwind(false)}
               onClick={() => setIsActiveTailwind(!isActiveTailwind)}
@@ -289,7 +289,7 @@ function Skills() {
               </div>
 
               <div
-                className={`absolute inset-0 flex flex-col items-center justify-center bg-white  dark:bg-slate-900/95 p-4 transition-all duration-500 ease-in-out
+                className={`absolute inset-0 flex flex-col items-center justify-center bg-bgLight dark:bg-bgDark p-4 transition-all duration-500 ease-in-out
           ${
             isActiveTailwind
               ? "opacity-100 translate-y-0 visible"
@@ -317,7 +317,7 @@ function Skills() {
               </div>
             </div>
             <div
-              className="relative w-40 h-40 bg-white dark:bg-slate-800 rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
+              className="relative w-40 h-40 bg-bgLight dark:bg-bgDark rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
               onMouseEnter={() => setIsActiveGit(true)}
               onMouseLeave={() => setIsActiveGit(false)}
               onClick={() => setIsActiveGit(!isActiveGit)}
@@ -336,7 +336,7 @@ function Skills() {
               </div>
 
               <div
-                className={`absolute inset-0 flex flex-col items-center justify-center bg-white  dark:bg-slate-900/95 p-4 transition-all duration-500 ease-in-out
+                className={`absolute inset-0 flex flex-col items-center justify-center bg-bgLight dark:bg-bgDark p-4 transition-all duration-500 ease-in-out
           ${
             isActiveGit
               ? "opacity-100 translate-y-0 visible"
@@ -364,7 +364,7 @@ function Skills() {
               </div>
             </div>
             <div
-              className="relative w-40 h-40 bg-white dark:bg-slate-800 rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
+              className="relative w-40 h-40 bg-bgLight dark:bg-bgDark rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
               onMouseEnter={() => setIsActivePwa(true)}
               onMouseLeave={() => setIsActivePwa(false)}
               onClick={() => setIsActivePwa(!isActivePwa)}
@@ -383,7 +383,7 @@ function Skills() {
               </div>
 
               <div
-                className={`absolute inset-0 flex flex-col items-center justify-center bg-white  dark:bg-slate-900/95 p-4 transition-all duration-500 ease-in-out
+                className={`absolute inset-0 flex flex-col items-center justify-center bg-bgLight dark:bg-bgDark p-4 transition-all duration-500 ease-in-out
           ${
             isActivePwa
               ? "opacity-100 translate-y-0 visible"
@@ -411,7 +411,7 @@ function Skills() {
               </div>
             </div>
             <div
-              className="relative w-40 h-40 bg-white dark:bg-slate-800 rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
+              className="relative w-40 h-40 bg-bgLight dark:bg-bgDark rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
               onMouseEnter={() => setIsActiveTesting(true)}
               onMouseLeave={() => setIsActiveTesting(false)}
               onClick={() => setIsActiveTesting(!isActiveTesting)}
@@ -430,7 +430,7 @@ function Skills() {
               </div>
 
               <div
-                className={`absolute inset-0 flex flex-col items-center justify-center bg-white  dark:bg-slate-900/95 p-4 transition-all duration-500 ease-in-out
+                className={`absolute inset-0 flex flex-col items-center justify-center bg-bgLight dark:bg-bgDark p-4 transition-all duration-500 ease-in-out
           ${
             isActiveTesting
               ? "opacity-100 translate-y-0 visible"
@@ -458,7 +458,7 @@ function Skills() {
               </div>
             </div>
             <div
-              className="relative w-40 h-40 bg-white dark:bg-slate-800 rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
+              className="relative w-40 h-40 bg-bgLight dark:bg-bgDark rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
               onMouseEnter={() => setIsActiveBootstrap(true)}
               onMouseLeave={() => setIsActiveBootstrap(false)}
               onClick={() => setIsActiveBootstrap(!isActiveBootstrap)}
@@ -477,7 +477,7 @@ function Skills() {
               </div>
 
               <div
-                className={`absolute inset-0 flex flex-col items-center justify-center bg-white  dark:bg-slate-900/95 p-4 transition-all duration-500 ease-in-out
+                className={`absolute inset-0 flex flex-col items-center justify-center bg-bgLight dark:bg-bgDark p-4 transition-all duration-500 ease-in-out
           ${
             isActiveBootstrap
               ? "opacity-100 translate-y-0 visible"
@@ -505,7 +505,7 @@ function Skills() {
               </div>
             </div>
             <div
-              className="relative w-40 h-40 bg-white dark:bg-slate-800 rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
+              className="relative w-40 h-40 bg-bgLight dark:bg-bgDark rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
               onMouseEnter={() => setIsActiveMaterial(true)}
               onMouseLeave={() => setIsActiveMaterial(false)}
               onClick={() => setIsActiveMaterial(!isActiveMaterial)}
@@ -524,7 +524,7 @@ function Skills() {
               </div>
 
               <div
-                className={`absolute inset-0 flex flex-col items-center justify-center bg-white  dark:bg-slate-900/95 p-4 transition-all duration-500 ease-in-out
+                className={`absolute inset-0 flex flex-col items-center justify-center bg-bgLight dark:bg-bgDark p-4 transition-all duration-500 ease-in-out
           ${
             isActiveMaterial
               ? "opacity-100 translate-y-0 visible"
@@ -552,7 +552,7 @@ function Skills() {
               </div>
             </div>
             <div
-              className="relative w-40 h-40 bg-white dark:bg-slate-800 rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
+              className="relative w-40 h-40 bg-bgLight dark:bg-bgDark rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
               onMouseEnter={() => setIsActiveSass(true)}
               onMouseLeave={() => setIsActiveSass(false)}
               onClick={() => setIsActiveSass(!isActiveSass)}
@@ -571,7 +571,7 @@ function Skills() {
               </div>
 
               <div
-                className={`absolute inset-0 flex flex-col items-center justify-center bg-white  dark:bg-slate-900/95 p-4 transition-all duration-500 ease-in-out
+                className={`absolute inset-0 flex flex-col items-center justify-center bg-bgLight dark:bg-bgDark p-4 transition-all duration-500 ease-in-out
           ${
             isActiveSass
               ? "opacity-100 translate-y-0 visible"
@@ -599,7 +599,7 @@ function Skills() {
               </div>
             </div>
             <div
-              className="relative w-40 h-40 bg-white dark:bg-slate-800 rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
+              className="relative w-40 h-40 bg-bgLight dark:bg-bgDark rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
               onMouseEnter={() => setIsActiveShodCn(true)}
               onMouseLeave={() => setIsActiveShodCn(false)}
               onClick={() => setIsActiveShodCn(!isActiveShodCn)}
@@ -618,7 +618,7 @@ function Skills() {
               </div>
 
               <div
-                className={`absolute inset-0 flex flex-col items-center justify-center bg-white  dark:bg-slate-900/95 p-4 transition-all duration-500 ease-in-out
+                className={`absolute inset-0 flex flex-col items-center justify-center bg-bgLight dark:bg-bgDark p-4 transition-all duration-500 ease-in-out
           ${
             isActiveShodCn
               ? "opacity-100 translate-y-0 visible"
@@ -646,7 +646,7 @@ function Skills() {
               </div>
             </div>
             <div
-              className="relative w-40 h-40 bg-white dark:bg-slate-800 rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
+              className="relative w-40 h-40 bg-bgLight dark:bg-bgDark rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
               onMouseEnter={() => setIsActiveHtmlCss(true)}
               onMouseLeave={() => setIsActiveHtmlCss(false)}
               onClick={() => setIsActiveHtmlCss(!isActiveHtmlCss)}
@@ -665,7 +665,7 @@ function Skills() {
               </div>
 
               <div
-                className={`absolute inset-0 flex flex-col items-center justify-center bg-white  dark:bg-slate-900/95 p-4 transition-all duration-500 ease-in-out
+                className={`absolute inset-0 flex flex-col items-center justify-center bg-bgLight dark:bg-bgDark p-4 transition-all duration-500 ease-in-out
           ${
             isActiveHtmlCss
               ? "opacity-100 translate-y-0 visible"

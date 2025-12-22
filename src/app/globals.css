@@ -3,19 +3,33 @@
 
 @custom-variant dark (&:is(.dark *));
 
-html , body{
+html,
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 @theme {
-  --font-vazir: 'var(--font-vazir)' ,
+  --font-vazir: 'var(--font-vazir)',
 }
 
 @theme {
-  --color-bgLight : #fdfdfd
+  --color-surfaceDark: #161420;
+  --color-bgDark: #0B0A10;
+  --color-headingTextDark: #8B5CF6;
+  --color-bodyTextDark: #F1F5F9;
+  --color-accentDark: #2DD4BF;
+  --color-border: #2e1065 ;
+  --color-specialGradient : from #4c1d95 to #0b0a16;
+  --color-bgLight: #F8FAFC;
+  --color-surfaceLight: #ffffff;
+  --color-headingTextLight: #6D28D9;
+  --color-bodyTextLight: #0F172A;
+  --color-elementLight: #7c3aed;
+  --color-accentLight: #0D9488;
 }
+
 .container {
   width: 100%;
   max-width: 1280px;
@@ -136,6 +150,7 @@ html , body{
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
