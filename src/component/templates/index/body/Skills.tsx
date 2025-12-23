@@ -1,8 +1,20 @@
 "use client";
 import React, { useState } from "react";
-import { FaBootstrap, FaCode, FaGitAlt, FaHtml5, FaReact, FaSass } from "react-icons/fa";
-import { IoCodeSlashSharp } from "react-icons/io5";
-import { RiJavascriptFill, RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { DiStylus } from "react-icons/di";
+import {
+  FaBootstrap,
+  FaCode,
+  FaGitAlt,
+  FaHtml5,
+  FaReact,
+  FaSass,
+} from "react-icons/fa";
+import { IoCodeOutline, IoCodeSlashSharp, IoStatsChart } from "react-icons/io5";
+import {
+  RiJavascriptFill,
+  RiNextjsFill,
+  RiTailwindCssFill,
+} from "react-icons/ri";
 import { SiPwa, SiRedux, SiTypescript } from "react-icons/si";
 
 function Skills() {
@@ -24,7 +36,7 @@ function Skills() {
 
   return (
     <>
-      <div className="w-full bg-surfaceLight  dark:bg-surfaceDark text-white">
+      <div className="w-full bg-surfaceLight  dark:bg-surfaceDark text-white py-5">
         <div className="container flex flex-col gap-10">
           <div className="flex items-center justify-start gap-2 rounded-b-lg w-fit">
             {/* <span className="h-10 w-3 bg-white"></span> */}
@@ -81,7 +93,7 @@ function Skills() {
                 </span>
               </div>
             </div>
-            <div  
+            <div
               className="relative w-40 h-40 bg-bgLight dark:bg-bgDark rounded-2xl shadow-xl overflow-hidden cursor-pointer group"
               onMouseEnter={() => setIsActiveNext(true)}
               onMouseLeave={() => setIsActiveNext(false)}
@@ -355,9 +367,7 @@ function Skills() {
                   ></div>
                 </div>
 
-                <span className="text-red-600 text-sm font-bold mt-2">
-                  95%
-                </span>
+                <span className="text-red-600 text-sm font-bold mt-2">95%</span>
                 <span className="w-full bg-gray-300 dark:bg-gray-800 text-center rounded-lg dark:text-white text-gray-800">
                   Package Manager
                 </span>
@@ -425,7 +435,7 @@ function Skills() {
           }
         `}
               >
-                <IoCodeSlashSharp  className="text-7xl text-orange-600 " />
+                <IoCodeSlashSharp className="text-7xl text-orange-600 " />
                 Testing
               </div>
 
@@ -472,8 +482,8 @@ function Skills() {
           }
         `}
               >
-                <FaBootstrap  className="text-7xl text-purple-600 " />
-                Bootstrap 
+                <FaBootstrap className="text-7xl text-purple-600 " />
+                Bootstrap
               </div>
 
               <div
@@ -486,7 +496,7 @@ function Skills() {
         `}
               >
                 <h3 className="dark:text-white text-gray-900 font-bold text-lg mb-2">
-                 Bootstrap  
+                  Bootstrap
                 </h3>
 
                 <div className="w-full h-2 bg-purple-200 rounded-full overflow-hidden">
@@ -519,7 +529,7 @@ function Skills() {
           }
         `}
               >
-                <FaCode  className="text-7xl text-black dark:text-white " />
+                <FaCode className="text-7xl text-black dark:text-white " />
                 Material
               </div>
 
@@ -533,7 +543,7 @@ function Skills() {
         `}
               >
                 <h3 className="dark:text-white text-gray-900 font-bold text-lg mb-2">
-                 Material 
+                  Material
                 </h3>
 
                 <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
@@ -566,8 +576,8 @@ function Skills() {
           }
         `}
               >
-                <FaSass  className="text-7xl text-pink-600 " />
-                Sass 
+                <FaSass className="text-7xl text-pink-600 " />
+                Sass
               </div>
 
               <div
@@ -580,7 +590,7 @@ function Skills() {
         `}
               >
                 <h3 className="dark:text-white text-gray-900 font-bold text-lg mb-2">
-                 Sass  
+                  Sass
                 </h3>
 
                 <div className="w-full h-2 bg-pink-200 rounded-full overflow-hidden">
@@ -613,7 +623,7 @@ function Skills() {
           }
         `}
               >
-                <FaCode  className="text-7xl text-black dark:text-white " />
+                <FaCode className="text-7xl text-black dark:text-white " />
                 ShodCn
               </div>
 
@@ -627,7 +637,7 @@ function Skills() {
         `}
               >
                 <h3 className="dark:text-white text-gray-900 font-bold text-lg mb-2">
-                 ShodCn 
+                  ShodCn
                 </h3>
 
                 <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
@@ -660,7 +670,7 @@ function Skills() {
           }
         `}
               >
-                <FaHtml5  className="text-7xl text-orange-600" />
+                <FaHtml5 className="text-7xl text-orange-600" />
                 Html | Css
               </div>
 
@@ -674,7 +684,7 @@ function Skills() {
         `}
               >
                 <h3 className="dark:text-white text-gray-900 font-bold text-lg mb-2">
-                 Html | Css 
+                  Html | Css
                 </h3>
 
                 <div className="w-full h-2 bg-orange-200 rounded-full overflow-hidden">
@@ -691,6 +701,28 @@ function Skills() {
                   UI Library
                 </span>
               </div>
+            </div>
+          </div>
+          <div className="w-full flex items-center justify-center gap-5 md:gap-10 flex-wrap">
+            <div data-aos="fade-up" className="md:w-64 w-40 md:h-52 h-36 hover:scale-105 transition-all rounded-lg p-2 md:p-5 flex flex-col items-center justify-center gap-2 md:gap-5 bg-bgLight shadow-2xl dark:bg-bgDark border-2 dark:border-brd ">
+              <IoStatsChart className="text-3xl md:text-4xl text-headingTextLight dark:text-headingTextDark"/>
+              <h4 className="text-2xl md:text-4xl font-bold text-headingTextLight dark:text-headingTextDark"> 87% </h4>
+              <p className="dark:text-bodyTextDark text-bodyTextLight font-extralight"> میانگین مهارت</p>
+            </div>
+            <div data-aos="fade-up" className="md:w-64 w-40 md:h-52 h-36 hover:scale-105 transition-all rounded-lg p-2 md:p-5 flex flex-col items-center justify-center gap-2 md:gap-5 bg-bgLight shadow-2xl dark:bg-bgDark border-2 dark:border-brd ">
+              <IoCodeOutline className="text-4xl font-black text-headingTextLight dark:text-headingTextDark"/>
+              <h4 className="text-2xl md:text-4xl font-bold text-headingTextLight dark:text-headingTextDark"> 2 </h4>
+              <p className="dark:text-bodyTextDark text-bodyTextLight font-extralight"> زبان ها </p>
+            </div>
+            <div data-aos="fade-up" className="md:w-64 w-40 md:h-52 h-36 hover:scale-105 transition-all rounded-lg flex flex-col items-center justify-center gap-2 bg-bgLight shadow-2xl dark:bg-bgDark border-2 dark:border-brd ">
+              <DiStylus className="md:text-6xl text-4xl text-headingTextLight dark:text-headingTextDark"/>
+              <h4 className="md:text-4xl text-2xl font-bold text-headingTextLight dark:text-headingTextDark"> 5 </h4>
+              <p className="dark:text-bodyTextDark text-bodyTextLight font-extralight"> کتابخانه رابط کاربری </p>
+            </div>
+            <div data-aos="fade-up" className="md:w-64 w-40 md:h-52 h-36 hover:scale-105 transition-all rounded-lg p-2 md:p-5 flex flex-col items-center justify-center gap-2 md:gap-5 bg-bgLight shadow-2xl dark:bg-bgDark border-2 dark:border-brd ">
+              <IoStatsChart className="text-3xl md:text-4xl text-headingTextLight dark:text-headingTextDark"/>
+              <h4 className="text-2xl md:text-4xl font-bold text-headingTextLight dark:text-headingTextDark"> 87% </h4>
+              <p className="dark:text-bodyTextDark text-bodyTextLight font-extralight"> میانگین مهارت </p>
             </div>
           </div>
         </div>

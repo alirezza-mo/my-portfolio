@@ -12,7 +12,7 @@ function Footer() {
         <div className="flex flex-row flex-wrap  md:flex-col items-center justify-center gap-2 text-bodyTextLight dark:text-black">
           <Link
             href={"/"}
-            className="w-24 text-center rounded-lg bg-accentLight dark:bg-accentDark p-1 hover:bg-bodyTextLight transition-all hover:text-accentLight  shadow-2xl/30 dark:hover:shadow-sky-300 shadow-md dark:hover:text-black  "
+            className="w-24 text-center rounded-lg bg-accentLight dark:bg-accentDark  p-1 hover:bg-bodyTextLight transition-all hover:text-accentLight  shadow-2xl/30 dark:hover:shadow-sky-300 shadow-md dark:hover:text-black  "
           >
             {" "}
             خانه{" "}

@@ -107,7 +107,7 @@ function Navbar() {
               initial={{ opacity: 0, translateX: "100%" }}
               animate={{ opacity: 1, translateX: 0 }}
               exit={{ opacity: 0, translateX: 100 }}
-              className=" w-full h-screen transition-all"
+              className=" w-full min-h-screen transition-all fixed z-50"
             >
               <div className="z-50 flex flex-col items-start justify-between md:hidden absolute right-0 top-0 bottom-0 h-screen w-[60%] bg-bgLight dark:bg-gray-800  p-3">
                 <div className="flex w-full justify-between items-center">
