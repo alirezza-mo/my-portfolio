@@ -338,9 +338,6 @@ function Projects() {
                 و به خوبی شرایط آب و هوایی را مشخص میکند.
               </p>
               <div className="flex items-center justify-start gap-2 flex-wrap">
-                
-                
-                
                 <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
                   accuweather API
                 </span>
@@ -369,8 +366,11 @@ function Projects() {
           </div>
         </div>
         <div>
-          <Link href={"/projects"} className="text-headingTextDark  flex items-center justify-center gap-2 text-xl font-bold transition-all  bg-headingTextDark/20 hover:bg-headingTextDark hover:text-white cursor-pointer p-2 rounded-lg">
-                  دیدن همه
+          <Link
+            href={"/projects"}
+            className="text-headingTextDark  flex items-center justify-center gap-2 text-xl font-bold transition-all  bg-headingTextDark/20 hover:bg-headingTextDark hover:text-white cursor-pointer p-2 rounded-lg"
+          >
+            دیدن همه
           </Link>
         </div>
       </section>

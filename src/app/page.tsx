@@ -1,24 +1,26 @@
 import Footer from "@/component/modules/Footer/Footer";
 import AboutMe from "@/component/templates/index/body/AboutMe";
+import GithubStats from "@/component/templates/index/body/GithubActivity";
+import GithubGrass from "@/component/templates/index/body/GithubActivity";
 import Projects from "@/component/templates/index/body/Projects";
 import Skills from "@/component/templates/index/body/Skills";
 import Header from "@/component/templates/index/header/Header";
 import React from "react";
 
-
 export default function Home(): React.ReactElement {
   return (
     <>
       <main className="bg-bgLight dark:bg-bgDark">
-        <Header/>
+        <Header />
         <div className="container">
-          <AboutMe/>
+          <AboutMe />
         </div>
-        <Skills/>
+        <Skills />
         <div className="container">
-          <Projects/>
+          <Projects />
         </div>
-        <Footer/>
+        <GithubStats username="alirezza-mo" />
+        <Footer />
       </main>
     </>
   );
