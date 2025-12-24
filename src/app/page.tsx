@@ -1,14 +1,11 @@
 import Footer from "@/component/modules/Footer/Footer";
 import AboutMe from "@/component/templates/index/body/AboutMe";
+import GithubActivity from "@/component/templates/index/body/GithubActivity.client";
 import Projects from "@/component/templates/index/body/Projects";
 import Skills from "@/component/templates/index/body/Skills";
 import Header from "@/component/templates/index/header/Header";
-import dynamic from "next/dynamic";
 import React from "react";
-const GithubStats = dynamic(
-  () => import("@/component/templates/index/body/GithubActivity"),
-  { ssr: false }
-);
+
 
 export default function Home(): React.ReactElement {
   return (
@@ -22,7 +19,7 @@ export default function Home(): React.ReactElement {
         <div className="container">
           <Projects />
         </div>
-        <GithubStats username="alirezza-mo" />
+        <GithubActivity username="alirezza-mo" />
         <Footer />
       </main>
     </>
