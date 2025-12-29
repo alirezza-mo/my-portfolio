@@ -3,9 +3,9 @@ import AboutMe from "@/component/templates/index/body/AboutMe";
 import GithubActivity from "@/component/templates/index/body/GithubActivity.client";
 import Projects from "@/component/templates/index/body/Projects";
 import Skills from "@/component/templates/index/body/Skills";
+import TimeLine from "@/component/templates/index/body/TimeLine";
 import Header from "@/component/templates/index/header/Header";
 import React from "react";
-
 
 export default function Home(): React.ReactElement {
   return (
@@ -18,8 +18,9 @@ export default function Home(): React.ReactElement {
         <Skills />
         <div className="container">
           <Projects />
+          <GithubActivity username="alirezza-mo" />
         </div>
-        <GithubActivity username="alirezza-mo" />
+        <TimeLine/>
         <Footer />
       </main>
     </>

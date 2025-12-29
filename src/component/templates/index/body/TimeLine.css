@@ -1,0 +1,22 @@
+/* استایل اسکرول‌بار باریک و زیبا */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1; /* رنگ طوسی روشن برای لایت */
+  border-radius: 20px;
+}
+
+/* حالت دارک برای اسکرول‌بار */
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #2e1065; /* رنگ بنفش تیره (brd) برای دارک */
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #8B5CF6; /* رنگ روشن‌تر هنگام هاور */
+}
