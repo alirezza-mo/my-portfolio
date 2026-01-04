@@ -1,5 +1,6 @@
 import Footer from "@/component/modules/Footer/Footer";
 import AboutMe from "@/component/templates/index/body/AboutMe";
+import Currently from "@/component/templates/index/body/Currently";
 import GithubActivity from "@/component/templates/index/body/GithubActivity.client";
 import Projects from "@/component/templates/index/body/Projects";
 import Skills from "@/component/templates/index/body/Skills";
@@ -21,6 +22,9 @@ export default function Home(): React.ReactElement {
           <GithubActivity username="alirezza-mo" />
         </div>
         <TimeLine/>
+        <div className="container">
+        <Currently/>
+        </div>
         <Footer />
       </main>
     </>
