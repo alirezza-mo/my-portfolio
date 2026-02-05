@@ -4,6 +4,7 @@ import Currently from "@/component/templates/index/body/Currently";
 import GithubActivity from "@/component/templates/index/body/GithubActivity.client";
 import Projects from "@/component/templates/index/body/Projects";
 import Skills from "@/component/templates/index/body/Skills";
+import LabTeaser from "@/component/templates/index/body/TabTeaser";
 import TimeLine from "@/component/templates/index/body/TimeLine";
 import Header from "@/component/templates/index/header/Header";
 import React from "react";
@@ -24,6 +25,7 @@ export default function Home(): React.ReactElement {
         <TimeLine/>
         <div className="container">
         <Currently/>
+        <LabTeaser/>
         </div>
         <Footer />
       </main>

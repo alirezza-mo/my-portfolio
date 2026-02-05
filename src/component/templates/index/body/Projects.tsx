@@ -1,380 +1,111 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { CiStar } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { GoLinkExternal } from "react-icons/go";
+import { motion } from "framer-motion";
+
+// ۱. دیتا را به یک ثابت منتقل می کنیم
+const PROJECTS_DATA = [
+  {
+    title: "وبسایت 4K-club",
+    description: "جهت ایجاد افزایش رقابت بین پلیر های گیم نت بوجود آمده است. این پروژه بصورت Full stack توسعه داده شده است.",
+    image: "/images/4k-club.png",
+    tags: ["ShadCn", "MongoDB", "Pusher", "Next.JS"],
+    github: "https://github.com/alirezza-mo/club-4k",
+    demo: "https://club-4k.vercel.app/",
+    featured: true,
+  },
+  {
+    title: "ست کافی وبسایت",
+    description: "فروشگاه ست کافی با پنل ادمین و پنل کاربری و امکان ثبت نام OTP. هندل کردن عضویت دوگانه یکی از چالش‌های اصلی بود.",
+    image: "/images/set-coffee.png",
+    tags: ["Bcryptjs", "Leaflet", "Rechart", "Next.js"],
+    github: "https://github.com/alirezza-mo/set-coffee",
+    featured: true,
+  },
+  // سایر پروژه‌ها را به همین ترتیب اینجا اضافه کن...
+];
 
 function Projects() {
   return (
-    <>
-      <section className="flex flex-col items-center  w-full gap-10 my-10">
-        <div className="w-full flex items-center justify-start">
-          <h2 className="text-3xl font-bold text-headingTextLight dark:text-headingTextDark ">
-            {" "}
-            پروژه های من :
-          </h2>
-        </div>
-        <div className="flex md:flex-row flex-wrap flex-col items-center justify-center gap-8">
-          <div className="md:w-[500px] h-[500px] w-80 bg-surfaceLight dark:bg-surfaceDark backdrop-blur-2xl rounded-lg shadow-xl">
-            <div className="h-[50%] w-full ">
-              <span className="absolute text-yellow-400 text-xs px-2 right-5 top-4 bg-yellow-400/30 flex items-center justify-center rounded-xl w-fit ">
-                Featured
-                <CiStar className="text-yellow-500 text-xl " />
-              </span>
-              <Image
-                src={"/images/4k-club.png"}
-                alt="4k-club"
-                width={500}
-                height={192}
-                className="rounded-t-lg w-full h-full"
-              />
-            </div>
-            <div className="p-3">
-              <h4 className="text-headingTextLight dark:text-headingTextDark font-bold text-2xl">
-                وبسایت 4K-club
-              </h4>
-              <p className="text-bodyTextLight dark:text-bodyTextDark font-light py-3 text-xs md:text-sm leading-6">
-                جهت ایجاد افزایش رقابت بین پلیر های گیم نت بوجود آمده است. این
-                پروژه بصورت Full stack توسعه داده شده است که برای سرویس چت
-                آنلاین ان از Pusher نیز استفاده شده است.
-              </p>
-              <div className="flex items-center justify-start gap-2 flex-wrap">
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  ShadCn
-                </span>
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  MongoDB
-                </span>
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  Liara
-                </span>
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  TailwindCss
-                </span>
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  Pusher
-                </span>
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  Next.JS
-                </span>
-              </div>
-              <div className="py-3 flex items-center justify-start gap-2 w-full">
-                <Link
-                  href={"https://github.com/alirezza-mo/club-4k"}
-                  className="text-purple-600 dark:text-purple-300 p-1 text-xs flex items-center justify-center gap-1 transition-all  bg-headingTextDark/20 hover:bg-headingTextDark hover:text-white cursor-pointer rounded-xl"
-                >
-                  <FaGithub className="text-base " />
-                  دیدن سورس
-                </Link>
-                <Link
-                  target="_blank"
-                  href={"https://club-4k.vercel.app/"}
-                  className=" text-bodyTextLight bg-accentLight dark:bg-accentDark rounded-xl p-1 text-xs flex items-center justify-center gap-1 transition-colors shadow-sky-400 hover:shadow-sm "
-                >
-                  {" "}
-                  <GoLinkExternal className="text-base " />
-                  تماشای پروژه
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="md:w-[500px] h-[500px] w-80 bg-surfaceLight dark:bg-surfaceDark backdrop-blur-2xl rounded-lg shadow-xl">
-            <div className="h-[50%] w-full ">
-              <span className="absolute text-yellow-500  px-2 right-5 top-4 backdrop-blur-2x bg-yellow-300/50 flex items-center justify-center rounded-xl w-fit ">
-                Featured
-                <CiStar className="text-yellow-500 text-2xl " />
-              </span>
-              <Image
-                src={"/images/set-coffee.png"}
-                alt="4k-club"
-                width={500}
-                height={192}
-                className="rounded-t-lg w-full h-full"
-              />
-            </div>
-            <div className="p-3">
-              <h4 className="text-headingTextLight dark:text-headingTextDark font-bold text-2xl">
-                ست کافی وبسایت
-              </h4>
-              <p className="text-bodyTextLight dark:text-bodyTextDark font-light py-3 text-xs md:text-sm leading-6">
-                فروشگاه ست کافی، الگو گرفته شده از خوده وبسایت ست کافی دارای پنل
-                ادمین و پنل کاربری و امکان ثبت و عضویت با Otp . یکی از چالش های
-                این پروژه هندل کردن عضویت کاربر هم بصورت رمز عبور و هم بصورت Otp
-                بوده است که با موفقیت به اتمام رسید.
-              </p>
-              <div className="flex items-center justify-start gap-2 flex-wrap">
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  bcryptjs
-                </span>
-                {/* <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  OTP
-                </span> */}
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  leaflet
-                </span>
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  Rechart
-                </span>
-                {/* <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  MaterialUi
-                </span> */}
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  Next.js
-                </span>
-              </div>
-              <div className="py-3 flex items-center justify-start gap-2 w-full">
-                <Link
-                  href={"https://github.com/alirezza-mo/set-coffee"}
-                  className="text-purple-600 dark:text-purple-300 p-1 text-xs flex items-center justify-center gap-1 transition-all  bg-headingTextDark/20 hover:bg-headingTextDark hover:text-white cursor-pointer rounded-xl"
-                >
-                  <FaGithub className="text-base " />
-                  دیدن سورس
-                </Link>
-                {/* <Link
-                  href={""}
-                  className=" text-bodyTextLight bg-accentLight dark:bg-accentDark rounded-xl p-1 text-xs flex items-center justify-center gap-1 transition-colors shadow-sky-400 hover:shadow-sm "
-                >
-                  {" "}
-                  <GoLinkExternal className="text-base " />
-                  تماشای پروژه
-                </Link> */}
-              </div>
-            </div>
-          </div>
-          <div className="md:w-[500px] h-[500px] w-80 bg-surfaceLight dark:bg-surfaceDark backdrop-blur-2xl rounded-lg shadow-xl">
-            <div className="h-[50%] w-full ">
-              <span className="absolute text-yellow-500  px-2 left-5 top-4 backdrop-blur-2x bg-yellow-300/50 flex items-center justify-center rounded-xl w-fit ">
-                Featured
-                <CiStar className="text-yellow-500 text-2xl " />
-              </span>
-              <Image
-                src={"/images/gameLand.png"}
-                alt="4k-club"
-                width={500}
-                height={192}
-                className="rounded-t-lg w-full h-full"
-              />
-            </div>
-            <div className="p-3">
-              <h4 className="text-headingTextLight dark:text-headingTextDark font-bold text-2xl">
-                وبسایت گیم لند
-              </h4>
-              <p className="text-bodyTextLight dark:text-bodyTextDark font-light py-3 text-xs md:text-sm leading-6">
-                پروژه فروشگاهی gameLand توسعه داده شده با React , TailwindCss با
-                دیزاین حرفه ای و جذاب و بسیار کاربر پسند است. توجه به نیاز های
-                کاربر از مهم ترین ویژگی های بود که زمان مناسبی صرف آن شده است.
-              </p>
-              <div className="flex items-center justify-start gap-2 flex-wrap">
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  MaterialUI
-                </span>
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  TailwindCss
-                </span>
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  React
-                </span>
-              </div>
-              <div className="py-3 flex items-center justify-start gap-2 w-full">
-                <Link
-                  href={"https://github.com/alirezza-mo/game-land"}
-                  className="text-purple-600 dark:text-purple-300 p-1 text-xs flex items-center justify-center gap-1 transition-all  bg-headingTextDark/20 hover:bg-headingTextDark hover:text-white cursor-pointer rounded-xl"
-                >
-                  <FaGithub className="text-base " />
-                  دیدن سورس
-                </Link>
-                {/* <Link
-                  href={""}
-                  className=" text-bodyTextLight bg-accentLight dark:bg-accentDark rounded-xl p-1 text-xs flex items-center justify-center gap-1 transition-colors shadow-sky-400 hover:shadow-sm "
-                >
-                  {" "}
-                  <GoLinkExternal className="text-base " />
-                  تماشای پروژه
-                </Link> */}
-              </div>
-            </div>
-          </div>
-          <div className="md:w-[500px] h-[500px] w-80 bg-surfaceLight dark:bg-surfaceDark backdrop-blur-2xl rounded-lg shadow-xl">
-            <div className="h-[50%] w-full ">
-              {/* <span className="absolute text-yellow-500  px-2 right-5 top-4 backdrop-blur-2x bg-yellow-300/50 flex items-center justify-center rounded-xl w-fit ">
-                Featured
-                <CiStar className="text-yellow-500 text-2xl " />
-              </span> */}
-              <Image
-                src={"/images/student.png"}
-                alt="4k-club"
-                width={500}
-                height={192}
-                className="rounded-t-lg w-full h-full"
-              />
-            </div>
-            <div className="p-3">
-              <h4 className="text-headingTextLight dark:text-headingTextDark font-bold text-2xl">
-                وبسایت آموزشی فست لرن
-              </h4>
-              <p className="text-bodyTextLight dark:text-bodyTextDark font-light py-3 text-xs md:text-sm leading-6">
-                پروژه آموزشی فست لرن که بعد از یادگیری React آن را کدنویسی کردم
-                که هم برای تثبیت این تکنولوژی و هم به چالش کشیدن خودم برای یک
-                پروژه ای که داری CMS دارد. از ویژگی های این پروژه، ماژولار بودن
-                آن است که از اصل DRY پیروی شده است.
-              </p>
-              <div className="flex items-center justify-start gap-2 flex-wrap">
-                {/* <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  sass
-                </span> */}
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  Parallel
-                </span>
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  Rechart
-                </span>
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  Bootstrap
-                </span>
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  React
-                </span>
-              </div>
-              <div className="py-3 flex items-center justify-start gap-2 w-full">
-                <Link
-                  href={"https://github.com/alirezza-mo/educational-"}
-                  className="text-purple-600 dark:text-purple-300 p-1 text-xs flex items-center justify-center gap-1 transition-all  bg-headingTextDark/20 hover:bg-headingTextDark hover:text-white cursor-pointer rounded-xl"
-                >
-                  <FaGithub className="text-base " />
-                  دیدن سورس
-                </Link>
-                {/* <Link
-                  href={""}
-                  className=" text-bodyTextLight bg-accentLight dark:bg-accentDark rounded-xl p-1 text-xs flex items-center justify-center gap-1 transition-colors shadow-sky-400 hover:shadow-sm "
-                >
-                  {" "}
-                  <GoLinkExternal className="text-base " />
-                  تماشای پروژه
-                </Link> */}
-              </div>
-            </div>
-          </div>
-          <div className="md:w-[500px] h-[500px] w-80 bg-surfaceLight dark:bg-surfaceDark backdrop-blur-2xl rounded-lg shadow-xl">
-            <div className="h-[50%] w-full ">
-              {/* <span className="absolute text-yellow-500  px-2 right-5 top-4 backdrop-blur-2x bg-yellow-300/50 flex items-center justify-center rounded-xl w-fit ">
-                Featured
-                <CiStar className="text-yellow-500 text-2xl " />
-              </span> */}
-              <Image
-                src={"/images/cms.png"}
-                alt="4k-club"
-                width={500}
-                height={192}
-                className="rounded-t-lg w-full h-full"
-              />
-            </div>
-            <div className="p-3">
-              <h4 className="text-headingTextLight dark:text-headingTextDark font-bold text-2xl">
-                پنل مدیریت
-              </h4>
-              <p className="text-bodyTextLight dark:text-bodyTextDark font-light py-3 text-xs md:text-sm leading-6">
-                ماژولار بودن و توجه به رابطه کاربری از نقطه عطف این پروژه است.
-                استفاده کردن از کتابخانه Rechart.js برای نمودار ها و کتابخانه
-                aos برای نمایش بهتر اسلاید ها در این پروژه میتوان ذکر کرد.
-              </p>
-              <div className="flex items-center justify-start gap-2 flex-wrap">
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  aos
-                </span>
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  Swiper
-                </span>
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  Rechart
-                </span>
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  Bootstrap
-                </span>
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  React
-                </span>
-              </div>
-              <div className="py-3 flex items-center justify-start gap-2 w-full">
-                <Link
-                  href={"https://github.com/alirezza-mo/dashboard-"}
-                  className="text-purple-600 dark:text-purple-300 p-1 text-xs flex items-center justify-center gap-1 transition-all  bg-headingTextDark/20 hover:bg-headingTextDark hover:text-white cursor-pointer rounded-xl"
-                >
-                  <FaGithub className="text-base " />
-                  دیدن سورس
-                </Link>
-                {/* <Link
-                  href={""}
-                  className=" text-bodyTextLight bg-accentLight dark:bg-accentDark rounded-xl p-1 text-xs flex items-center justify-center gap-1 transition-colors shadow-sky-400 hover:shadow-sm "
-                >
-                  {" "}
-                  <GoLinkExternal className="text-base " />
-                  تماشای پروژه
-                </Link> */}
-              </div>
-            </div>
-          </div>
-          <div className="md:w-[500px] h-[500px] w-80 bg-surfaceLight dark:bg-surfaceDark backdrop-blur-2xl rounded-lg shadow-xl">
-            <div className="h-[50%] w-full ">
-              {/* <span className="absolute text-yellow-500  px-2 right-5 top-4 backdrop-blur-2x bg-yellow-300/50 flex items-center justify-center rounded-xl w-fit ">
-                Featured
-                <CiStar className="text-yellow-500 text-2xl " />
-              </span> */}
-              <Image
-                src={"/images/weather.png"}
-                alt="4k-club"
-                width={500}
-                height={192}
-                className="rounded-t-lg w-full h-full"
-              />
-            </div>
-            <div className="p-3">
-              <h4 className="text-headingTextLight dark:text-headingTextDark font-bold text-2xl">
-                پروژه آب و هوا
-              </h4>
-              <p className="text-bodyTextLight dark:text-bodyTextDark font-light py-3 text-xs md:text-sm leading-6">
-                این برنامه آب و هوا با جاوااسکریپت خام کدنویسی شده است. برنامه
-                ای کاربردی که با استفاده از API وبسایت accuweather بالا آمده است
-                و به خوبی شرایط آب و هوایی را مشخص میکند.
-              </p>
-              <div className="flex items-center justify-start gap-2 flex-wrap">
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  accuweather API
-                </span>
-                <span className="bg-headingTextLight/50 rounded-2xl px-2 py-1 text-purple-700 dark:text-purple-400 text-xs">
-                  Javascript
-                </span>
-              </div>
-              <div className="py-3 flex items-center justify-start gap-2 w-full">
-                <Link
-                  href={"https://github.com/alirezza-mo/weatherApp"}
-                  className="text-purple-600 dark:text-purple-300 p-1 text-xs flex items-center justify-center gap-1 transition-all  bg-headingTextDark/20 hover:bg-headingTextDark hover:text-white cursor-pointer rounded-xl"
-                >
-                  <FaGithub className="text-base " />
-                  دیدن سورس
-                </Link>
-                {/* <Link
-                  href={""}
-                  className=" text-bodyTextLight bg-accentLight dark:bg-accentDark rounded-xl p-1 text-xs flex items-center justify-center gap-1 transition-colors shadow-sky-400 hover:shadow-sm "
-                >
-                  {" "}
-                  <GoLinkExternal className="text-base " />
-                  تماشای پروژه
-                </Link> */}
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <Link
-            href={"/projects"}
-            className="text-headingTextDark  flex items-center justify-center gap-2 text-xl font-bold transition-all  bg-headingTextDark/20 hover:bg-headingTextDark hover:text-white cursor-pointer p-2 rounded-lg"
+    <section className="container mx-auto px-4 py-20 overflow-hidden">
+      <div className="flex items-center justify-start mb-12">
+        <h2 className="text-4xl font-black text-headingTextLight dark:text-headingTextDark relative">
+          پروژه های من
+          <span className="absolute -bottom-2 right-0 w-1/2 h-1 bg-headingTextDark rounded-full"></span>
+        </h2>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+        {PROJECTS_DATA.map((project, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.1 }}
+            className="group relative bg-surfaceLight dark:bg-surfaceDark rounded-[2rem] border border-brd/10 overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500"
           >
-            دیدن همه
-          </Link>
-        </div>
-      </section>
-    </>
+            {/* Image Section */}
+            <div className="relative h-64 w-full overflow-hidden">
+              {project.featured && (
+                <div className="absolute top-4 right-4 z-10 flex items-center gap-1 bg-yellow-400/20 backdrop-blur-md text-yellow-600 dark:text-yellow-400 px-3 py-1 rounded-full text-[10px] font-bold border border-yellow-400/30">
+                  FEATURED <CiStar className="text-sm" />
+                </div>
+              )}
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-surfaceDark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                <div className="flex gap-3">
+                  <Link href={project.github} className="p-3 bg-white/10 backdrop-blur-md rounded-full text-white hover:bg-headingTextDark transition-colors">
+                    <FaGithub size={20} />
+                  </Link>
+                  {project.demo && (
+                    <Link href={project.demo} className="p-3 bg-white/10 backdrop-blur-md rounded-full text-white hover:bg-accentDark transition-colors">
+                      <GoLinkExternal size={20} />
+                    </Link>
+                  )}
+                </div>
+              </div>
+            </div>
+
+            {/* Content Section */}
+            <div className="p-8">
+              <h4 className="text-2xl font-bold text-headingTextLight dark:text-headingTextDark mb-4">
+                {project.title}
+              </h4>
+              <p className="text-bodyTextLight/80 dark:text-bodyTextDark/80 text-sm leading-7 mb-6 line-clamp-3">
+                {project.description}
+              </p>
+              
+              <div className="flex flex-wrap gap-2">
+                {project.tags.map((tag) => (
+                  <span key={tag} className="px-3 py-1 text-[10px] font-medium rounded-lg bg-headingTextLight/5 dark:bg-headingTextDark/10 text-purple-600 dark:text-purple-400 border border-purple-500/10">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+
+      <div className="mt-16 text-center">
+        <Link
+          href="/projects"
+          className="inline-flex items-center gap-2 px-8 py-4 bg-headingTextDark text-white rounded-2xl font-bold hover:shadow-[0_10px_30px_-10px_rgba(139,92,246,0.5)] transition-all"
+        >
+          دیدن همه پروژه‌ها
+        </Link>
+      </div>
+    </section>
   );
 }
 

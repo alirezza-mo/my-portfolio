@@ -4,6 +4,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Vazirmatn } from "next/font/google";
 import AOSInit from "@/utils/aos";
+import FloatingTerminal from "@/component/templates/index/body/FloatingTerminal";
 
 const vazir = Vazirmatn({
   subsets: ["arabic"],
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body className="font-vazir">
         <AOSInit/>
         {children}
+        <FloatingTerminal/>
       </body>
     </html>
   );

@@ -125,7 +125,7 @@ function Navbar() {
                     خانه{" "}
                   </Link>
                   <Link
-                    href={"/"}
+                    href={"/projects"}
                     className="text-center p-1 text-gray-500 transition-all active:text-orange-600 active:bg-orange-400/50 rounded-lg "
                   >
                     {" "}
