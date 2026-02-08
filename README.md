@@ -30,12 +30,3 @@
 |--------------|-------------|
 | ![Desktop](/public/images/screenshot/desktop.png) | ![Mobile](/public/images/screenshot/mobile.png) |
 
-> **نکته:** برای بخش اسکرین‌شات‌ها، دو عکس از سایتت بگیر و در پوشه `public/screenshots` قرار بده.
-
-## 🚀 راه‌اندازی پروژه (Installation)
-
-برای اجرای محلی پروژه روی سیستم خودتان:
-
-1. کلون کردن مخزن:
-   ```bash
-   git clone [https://github.com/alirezza-mo/my-portfolio.git](https://github.com/alirezza-mo/my-portfolio.git)
