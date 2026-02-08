@@ -38,7 +38,7 @@ export default function CreativeResume() {
           <div className="absolute -bottom-16 right-8 md:right-16 flex items-end print:static print:flex-row print:items-center print:px-8 print:pt-8">
             <div className="w-32 h-32 rounded-3xl bg-black border-4 border-surfaceLight dark:border-surfaceDark overflow-hidden shadow-2xl print:border-black print:w-24 print:h-24">
               <Image
-                src="/images/herosection.png"
+                src="/images/herosection.webp"
                 alt="Profile"
                 width={128}
                 height={128}

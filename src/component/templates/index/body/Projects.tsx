@@ -12,7 +12,7 @@ const PROJECTS_DATA = [
   {
     title: "وبسایت 4K-club",
     description: "جهت ایجاد افزایش رقابت بین پلیر های گیم نت بوجود آمده است. این پروژه بصورت Full stack توسعه داده شده است.",
-    image: "/images/4k-club.png",
+    image: "/images/4k-club.webp",
     tags: ["ShadCn", "MongoDB", "Pusher", "Next.JS"],
     github: "https://github.com/alirezza-mo/club-4k",
     demo: "https://club-4k.vercel.app/",

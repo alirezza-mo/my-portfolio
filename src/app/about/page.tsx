@@ -50,7 +50,7 @@ export default function AboutPage() {
             <div className="absolute inset-0 bg-gradient-to-tr from-purple-600 to-blue-600 rounded-[3rem] rotate-6 group-hover:rotate-12 transition-transform duration-500"></div>
             <div className="absolute inset-0 bg-surfaceDark rounded-[3rem] overflow-hidden border border-white/10">
               <Image
-                src="/images/hs-mb-purple.png"
+                src="/images/hs-mb-purple.webp"
                 alt="Profile"
                 width={320}
                 height={320}

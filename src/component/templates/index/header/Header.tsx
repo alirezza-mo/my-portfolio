@@ -21,7 +21,7 @@ function Header() {
   }, []);
   return (
     <>
-      <header className="w-full h-screen bg-[url(/images/hs-mb-purple.png)] md:bg-[url(/images/herosection.png)] bg-center bg-cover">
+      <header className="w-full h-screen bg-[url(/images/hs-mb-purple.webp)] md:bg-[url(/images/herosection.webp)] bg-center bg-cover">
         <Navbar />
         <div className="flex flex-col items-start justify-around md:justify-center w-full h-full inset-0">
           <div className="flex flex-col items-center justify-around md:justify-center w-full h-[50%] md:h-[70%]">
@@ -73,7 +73,7 @@ function Header() {
                 <FaTelegram className="group-hover:text-blue-600 group-hover:scale-150 text-white text-2xl lg:text-4xl transition-all " />
               </Link>
               <Link
-                href={"https://t.me/allirezza_mr"}
+                href={"https://t.me/allirezza_mo"}
                 className="group w-14 h-14  rounded-lg bg-white flex items-center justify-center hover:bg-transparent transition-all"
               >
                 <FaLinkedin className="group-hover:text-blue-600 group-hover:scale-150 text-blue-600 text-2xl lg:text-4xl transition-all" />

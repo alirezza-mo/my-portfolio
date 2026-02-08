@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     siteName: "Alireza Mo",
     images: [
       {
-        url: "/hs-mb-purple.png", 
+        url: "/hs-mb-purple.webp", 
         width: 1200,
         height: 630,
         alt: "علیرضا مرادی - توسعه‌دهنده فرانت‌اند",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "علیرضا مرادی",
     description: "توسعه‌دهنده خلاق فرانت‌اند",
-    images: ["/hs-mb-purple.png"],
+    images: ["/hs-mb-purple.webp"],
   },
   
   robots: {
