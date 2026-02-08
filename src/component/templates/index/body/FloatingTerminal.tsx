@@ -77,7 +77,7 @@ const FloatingTerminal = () => {
     <div 
       className="fixed z-[9999] transition-all duration-300 ease-out"
       style={{ 
-        bottom: keyboardHeight > 0 ? `${keyboardHeight + 20}px` : "24px",
+        bottom: keyboardHeight > 0 ? `${keyboardHeight + 20}px` : "100px",
         left: "24px" 
       }}
     >

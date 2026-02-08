@@ -46,30 +46,30 @@ function Navbar() {
       <nav className=" w-full flex justify-center z-50">
         <div className="z-50 fixed w-full mx-5 xl:w-[1240px] lg:w-[900px] md:w-[700px] bg-transparent md:flex items-center justify-between mt-5 backdrop-blur-xl p-2 rounded-2xl">
           <ul className="hidden  md:flex items-center justify-center gap-4 text-gray-300 ">
-            <li className="transition-all hover:text-gray-200 active:text-gray-200 cursor-pointer">
+            <Link href={'/'} className="transition-all hover:text-gray-200 active:text-gray-200 cursor-pointer">
               {" "}
               خانه{" "}
-            </li>
-            <li className="transition-all hover:text-gray-200 active:text-gray-200 cursor-pointer">
+            </Link>
+            <Link href={"/projects"} className="transition-all hover:text-gray-200 active:text-gray-200 cursor-pointer">
               {" "}
               پروژه{" "}
-            </li>
-            <li className="transition-all hover:text-gray-200 active:text-gray-200 cursor-pointer">
+            </Link>
+            <Link href={"/resume"} className="transition-all hover:text-gray-200 active:text-gray-200 cursor-pointer">
               {" "}
               رزومه{" "}
-            </li>
-            <li className="transition-all hover:text-gray-200 active:text-gray-200 cursor-pointer">
+            </Link>
+            <Link href={"/blog"} className="transition-all hover:text-gray-200 active:text-gray-200 cursor-pointer">
               {" "}
               وبلاگ{" "}
-            </li>
-            <li className="transition-all hover:text-gray-200 active:text-gray-200 cursor-pointer">
+            </Link>
+            <Link href={"/contact"} className="transition-all hover:text-gray-200 active:text-gray-200 cursor-pointer">
               {" "}
               ارتباط با من{" "}
-            </li>
-            <li className="transition-all hover:text-gray-200 active:text-gray-200 cursor-pointer">
+            </Link>
+            <Link href={"/about"} className="transition-all hover:text-gray-200 active:text-gray-200 cursor-pointer">
               {" "}
               درباره من{" "}
-            </li>
+            </Link>
           </ul>
           <div className="hidden md:flex items-center justify-center gap-5 xl:gap-28">
             {/* <button aria-label="Toggle Theme" onClick={toggleTheme}>
@@ -132,35 +132,35 @@ function Navbar() {
                     پروژه{" "}
                   </Link>
                   <Link
-                    href={"/"}
+                    href={"/resume"}
                     className="text-center p-1 text-gray-500 transition-all active:text-orange-600 active:bg-orange-400/50 rounded-lg "
                   >
                     {" "}
                     مهارت ها{" "}
                   </Link>
                   <Link
-                    href={"/"}
+                    href={"/resume"}
                     className="text-center p-1 text-gray-500 transition-all active:text-orange-600 active:bg-orange-400/50 rounded-lg "
                   >
                     {" "}
                     رزومه{" "}
                   </Link>
                   <Link
-                    href={"/"}
+                    href={"/blog"}
                     className="text-center p-1 text-gray-500 transition-all active:text-orange-600 active:bg-orange-400/50 rounded-lg "
                   >
                     {" "}
                     وبلاگ{" "}
                   </Link>
                   <Link
-                    href={"/"}
+                    href={"/contact"}
                     className="text-center p-1 text-gray-500 transition-all active:text-orange-600 active:bg-orange-400/50 rounded-lg "
                   >
                     {" "}
                     ارتباط با من{" "}
                   </Link>
                   <Link
-                    href={"/"}
+                    href={"/about"}
                     className="text-center p-1 text-gray-500 transition-all active:text-orange-600 active:bg-orange-400/50 rounded-lg "
                   >
                     {" "}

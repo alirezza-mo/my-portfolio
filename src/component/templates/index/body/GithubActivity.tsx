@@ -21,7 +21,7 @@ const GithubStats: React.FC<GithubStatsProps> = ({ username }) => {
   };
  
   return (
-    <div className="  p-4 w-full bg-surfaceLight dark:bg-surfaceDark shadow-lg hover:shadow-purple-500/10 transition-all duration-300">
+    <div className="   bg-surfaceLight dark:bg-surfaceDark shadow-lg hover:shadow-purple-500/10 transition-all duration-300">
       <div className=" flex flex-col items-center justify-center gap-10">
         <div className="mb-4 flex items-center w-full justify-start gap-2">
           <h3 className="text-3xl font-bold text-headingTextLight dark:text-headingTextDark">

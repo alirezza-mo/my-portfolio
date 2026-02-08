@@ -155,3 +155,22 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@media print {
+  @page { margin: 1cm; }
+  body { background: white !important; color: black !important; }
+  
+  nav, footer, button, .terminal-floating { display: none !important; }
+
+  .bg-surfaceLight, .bg-surfaceDark, .backdrop-blur-3xl {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: black !important;
+  }
+
+  h1, h2, h3, h4 { color: black !important; }
+  p, span, li { color: #333 !important; }
+  
+  a { text-decoration: none !important; color: black !important; }
+}
